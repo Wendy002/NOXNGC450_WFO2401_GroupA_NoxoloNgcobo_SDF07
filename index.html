@@ -1,0 +1,44 @@
+<!doctype html>
+<html> 
+    <!-- META DATA-->
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Add to Cart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <meta ame="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body>
+        <!-- BODY-->
+        <div class="container">
+            <img src="bakery.png">
+           
+           <!-- <input type="text" id="input-field" placeholder="Choose Item"> -->
+            <!--FORM FOR DROPDOWN MENU-->
+            <form id=form1>
+                <label for="items">Choose Item:</label>
+                <select name="items" id="items" required>
+                    <option value="Choc Bread">Choc Bread</option>
+                    <option value="Plain">Plain Bread</option>
+                    <option value="Vanilla Cake"> Vanilla Cake</option>
+                    <option value="Choc Cake">Choc Cake</option>
+                    <option value="Bluberry Cake">Bluberry Cake</option>
+                    <option value="Bran Muffin">Bran Muffin</option>
+                    <option value="Coffee">Coffee</option>
+                    <option value="Matcha">Matcha</option>
+                </select>
+            </form>
+            <button id="add-button">Add to cart</button>
+            <!--The li elements are created inside the script-->
+            <ul id="cart-list">
+            </ul>
+        </div>
+        <!-- SCRIPT with type= module to enable firebase usage-->
+        <script src="index.js"  type="module"></script>
+    </body>
+</html>
